@@ -27,11 +27,13 @@ GEM
     minitest (4.7.5)
     multi_json (1.7.9)
     multi_xml (0.5.5)
-    puma (2.5.1)
-      rack (>= 1.1, < 2.0)
-    puma (2.5.1-java)
-      rack (>= 1.1, < 2.0)
-    rack (1.5.2)
+    nio4r (2.7.0)
+    nio4r (2.7.0-java)
+    puma (6.4.2)
+      nio4r (~> 2.0)
+    puma (6.4.2-java)
+      nio4r (~> 2.0)
+    rack (3.0.8)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-mount (0.8.3)
@@ -51,5 +53,8 @@ PLATFORMS
 
 DEPENDENCIES
   grape
-  puma
+  puma (>= 5.6.8)
   rack
+
+BUNDLED WITH
+   2.1.4
