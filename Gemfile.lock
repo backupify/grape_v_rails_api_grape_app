@@ -1,55 +1,77 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.0.0)
-      i18n (~> 0.6, >= 0.6.4)
-      minitest (~> 4.2)
-      multi_json (~> 1.3)
-      thread_safe (~> 0.1)
-      tzinfo (~> 0.3.37)
-    atomic (1.1.13)
-    atomic (1.1.13-java)
-    backports (3.3.3)
-    builder (3.2.2)
-    descendants_tracker (0.0.1)
-    grape (0.5.0)
-      activesupport
-      builder
-      hashie (>= 1.2.0)
-      multi_json (>= 1.3.2)
-      multi_xml (>= 0.5.2)
-      rack (>= 1.3.0)
-      rack-accept
-      rack-mount
-      virtus
-    hashie (2.0.5)
-    i18n (0.6.5)
-    minitest (4.7.5)
-    multi_json (1.7.9)
-    multi_xml (0.5.5)
-    puma (2.5.1)
-      rack (>= 1.1, < 2.0)
-    puma (2.5.1-java)
-      rack (>= 1.1, < 2.0)
-    rack (1.5.2)
-    rack-accept (0.4.5)
-      rack (>= 0.4)
-    rack-mount (0.8.3)
-      rack (>= 1.0.0)
-    thread_safe (0.1.2)
-      atomic
-    thread_safe (0.1.2-java)
-      atomic
-    tzinfo (0.3.37)
-    virtus (0.5.5)
-      backports (~> 3.3)
-      descendants_tracker (~> 0.0.1)
+    activesupport (7.2.2.2)
+      base64
+      benchmark (>= 0.3)
+      bigdecimal
+      concurrent-ruby (~> 1.0, >= 1.3.1)
+      connection_pool (>= 2.2.5)
+      drb
+      i18n (>= 1.6, < 2)
+      logger (>= 1.4.2)
+      minitest (>= 5.1)
+      securerandom (>= 0.3)
+      tzinfo (~> 2.0, >= 2.0.5)
+    base64 (0.3.0)
+    benchmark (0.4.1)
+    bigdecimal (3.3.1)
+    bigdecimal (3.3.1-java)
+    concurrent-ruby (1.3.5)
+    connection_pool (2.5.4)
+    drb (2.2.3)
+    dry-core (1.1.0)
+      concurrent-ruby (~> 1.0)
+      logger
+      zeitwerk (~> 2.6)
+    dry-inflector (1.2.0)
+    dry-logic (1.6.0)
+      bigdecimal
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 1.1)
+      zeitwerk (~> 2.6)
+    dry-types (1.8.3)
+      bigdecimal (~> 3.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 1.0)
+      dry-inflector (~> 1.0)
+      dry-logic (~> 1.4)
+      zeitwerk (~> 2.6)
+    grape (2.4.0)
+      activesupport (>= 6.1)
+      dry-types (>= 1.1)
+      mustermann-grape (~> 1.1.0)
+      rack (>= 2)
+      zeitwerk
+    i18n (1.14.7)
+      concurrent-ruby (~> 1.0)
+    logger (1.7.0)
+    minitest (5.26.0)
+    mustermann (3.0.4)
+      ruby2_keywords (~> 0.0.1)
+    mustermann-grape (1.1.0)
+      mustermann (>= 1.0.0)
+    nio4r (2.7.4)
+    nio4r (2.7.4-java)
+    puma (7.0.4)
+      nio4r (~> 2.0)
+    puma (7.0.4-java)
+      nio4r (~> 2.0)
+    rack (3.2.3)
+    ruby2_keywords (0.0.5)
+    securerandom (0.4.1)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    zeitwerk (2.6.18)
 
 PLATFORMS
   java
   ruby
 
 DEPENDENCIES
-  grape
-  puma
-  rack
+  grape (>= 0.6.0)
+  puma (>= 2.12.0)
+  rack (>= 2.2.20)
+
+BUNDLED WITH
+   2.3.27
