@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'grape'
-gem 'puma'
-gem 'rack'
+gem 'grape', '>= 0.6.0'
+gem 'puma', '>= 2.12.0'
+gem 'rack', '>= 2.2.20'
